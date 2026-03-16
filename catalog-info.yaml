@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "demo12"
+  description: "Deploys to staging branch"
+  annotations:
+    backstage.io/docker-image: "https://docker.io/test"
+    platform/hardware-profile: "vHigh (CPULimit=8000m, CPU= 6500m, MemoryLimit= 8000Mi, Memory= 8000Mi)"
+    platform/hpa-config: "medium (min= 2, max= 4)"
+spec:
+  type: "frontend"
+  owner: "aditya@gmail.com"
+  lifecycle: experimental
